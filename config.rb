@@ -20,6 +20,10 @@ page "/*.json", layout: false
 page "/*.txt", layout: false
 page "/*.xml", layout: false
 
+activate :blog do |blog|
+  #Options go here
+end
+
 configure :development do
   activate :livereload do |reload|
     reload.no_swf = true
