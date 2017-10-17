@@ -21,7 +21,8 @@ page "/*.txt", layout: false
 page "/*.xml", layout: false
 
 activate :blog do |blog|
-  #Options go here
+  blog.tag_template = "tag.html"
+  blog.layout = "layouts/post-layout"
 end
 
 configure :development do
