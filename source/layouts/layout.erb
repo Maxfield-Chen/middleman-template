@@ -11,15 +11,7 @@
   <body>
     <main role="main">
       <aside class="side-nav">
-        <h1><%= link_to "Home", "/"%></h1>
-
-          <p>Suggested Listening: <br>"Ryo Fukui | <em>Scenery</em>", "volfpeck | <em>Fuege State</em>", "Ben Prunty | <em>Cipher</em>"</p>
-
-        <ul>
-          <% blog.tags.each do |tag, articles| %>
-            <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
-          <% end %>
-        </ul>
+        <%= partial "partials/sidebar" %>
       </aside>
       <section class="post-container">
         <%= yield %>

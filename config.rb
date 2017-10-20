@@ -1,5 +1,6 @@
 activate :aria_current
 activate :autoprefixer
+activate :directory_indexes
 
 set :css_dir, "assets/stylesheets"
 set :fonts_dir, "assets/fonts"
@@ -21,8 +22,8 @@ page "/*.txt", layout: false
 page "/*.xml", layout: false
 
 activate :blog do |blog|
+  blog.prefix = "posts"
   blog.tag_template = "tag.html"
-  blog.layout = "layouts/post-layout"
 end
 
 configure :development do
