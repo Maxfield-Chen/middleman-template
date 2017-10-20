@@ -1,6 +1,7 @@
 activate :aria_current
 activate :autoprefixer
 activate :directory_indexes
+activate :asset_hash
 
 set :css_dir, "assets/stylesheets"
 set :fonts_dir, "assets/fonts"

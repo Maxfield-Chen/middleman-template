@@ -1,8 +1,10 @@
 <h1><%= link_to "Home", "/"%></h1>
 <p>Suggested Listening: <br>
-"Ryo Fukui  | <em>Scenery</em>"<br>
-"Volfpeck   | <em>Fuege State</em>"<br>
-"Ben Prunty | <em>Cipher</em>"<br></p>
+<ul>
+  <% data.suggested_listening.songs.each do |s| %>
+    <li><%= s %></li>
+  <% end %>
+</ul>
 
 <ul>
   <% blog.tags.each do |tag, articles| %>
