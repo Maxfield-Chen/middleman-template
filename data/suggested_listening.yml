@@ -1,5 +1,11 @@
 songs:
-  - Ryo Fukui  | Scenery
-  - Volfpeck   | Fuege State
-  - Ben Prunty | Cipher
+  - artist: Ryo Fukui
+    album:  Scenery
+    link: "https://www.youtube.com/watch?v=Hrr3dp7zRQY"
+  - artist: Volfpeck
+    album: Fuege State
+    link: "https://www.youtube.com/watch?v=3RGoXZvuUBw"
+  - artist: Ben Prunty
+    album: Cipher
+    link: "https://www.youtube.com/watch?v=hWWc8oYvWj0"
         

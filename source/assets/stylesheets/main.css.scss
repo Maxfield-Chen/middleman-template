@@ -5,6 +5,16 @@
 
 @import "base/base";
 
+.sitename {
+  font-size: 3.5vw;
+  font-family: 'Cormorant', serif;
+}
+
+.sitedesc {
+  font-size: 1.1vw;
+  margin-bottom: -1em;
+}
+
 .container {
   @include grid-container;
   margin: $base-spacing auto;
@@ -13,8 +23,35 @@
 
 .side-nav {
   @include grid-column(2);
+  font-size: 1vw;
 }
 
 .post-container {
   @include grid-column(10);
+}
+
+.post-block {
+  font-size: 1vw;
+}
+
+.post-title {
+  font-size: 3vw;
+}
+
+.suggested_listening {
+  font-size: .75vw;
+  outline-color: rgb(204,204,204);
+  outline-style: solid;
+  outline-width: 1px;
+  padding: 1.2em;
+  margin-bottom: 1em;
+  height: 7em;
+  width: 93%;
+}
+
+pre {
+  width: 99%;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
 }

@@ -25,6 +25,8 @@ page "/*.xml", layout: false
 activate :blog do |blog|
   blog.prefix = "posts"
   blog.tag_template = "tag.html"
+  blog.summary_separator = /READMORE/
+  blog.summary_length = nil
 end
 
 configure :development do

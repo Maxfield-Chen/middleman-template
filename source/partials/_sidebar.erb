@@ -1,10 +1,19 @@
-<h1><%= link_to "Home", "/"%></h1>
-<p>Suggested Listening: <br>
-<ul>
-  <% data.suggested_listening.songs.each do |s| %>
-    <li><%= s %></li>
-  <% end %>
-</ul>
+<div class="sitename"><%= link_to "Odlow", "/"%></div>
+<div class="sitedesc">
+  <p>
+Weekly posting of hacks
+  and odd arcane things.
+  </p>
+</div>
+
+<br><p><b>Suggested Listening:</b> <br></p>
+<div class = suggested_listening>
+  <ol>
+    <% data.suggested_listening.songs.each do |s| %>
+      <li><pre><%= '%-12s' % [s.artist+":"] %> <%= link_to s.album, s.link %> </pre></li>
+    <% end %>
+  </ol>
+</div>
 
 <ul>
   <% blog.tags.each do |tag, articles| %>
