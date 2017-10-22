@@ -1,3 +1,9 @@
+// Modular Scale
+$modularscale: (
+  base: 1vw,
+  ratio: $golden
+);
+
 // Typography
 $base-font-family: 'Anonymous Pro', monospace;
 $heading-font-family: $base-font-family;

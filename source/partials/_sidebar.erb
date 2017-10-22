@@ -10,7 +10,7 @@ Weekly posting of hacks
 <div class = suggested_listening>
   <ol>
     <% data.suggested_listening.songs.each do |s| %>
-      <li><pre><%= '%-12s' % [s.artist+":"] %> <%= link_to s.album, s.link %> </pre></li>
+      <li><pre><%= '%-12s' % [s.artist+":"] %> <%= link_to s.album, s.link, target: "_blank" %> </pre></li>
     <% end %>
   </ol>
 </div>

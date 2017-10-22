@@ -1,3 +1,4 @@
+require 'tzinfo'
 activate :aria_current
 activate :autoprefixer
 activate :directory_indexes
@@ -21,6 +22,8 @@ set :markdown_engine, :redcarpet
 page "/*.json", layout: false
 page "/*.txt", layout: false
 page "/*.xml", layout: false
+
+Time.zone = 'EST'
 
 activate :blog do |blog|
   blog.prefix = "posts"

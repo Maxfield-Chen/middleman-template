@@ -28,6 +28,26 @@
 
 .post-container {
   @include grid-column(10);
+  & ul {
+    list-style-type: square;
+    margin: 0;
+    margin-left: 1.5vw;
+    margin-bottom: 1vw;
+    padding: 0;
+  }
+  & ul ul {
+    margin-bottom: 0;
+  }
+  & ol ol {
+    margin-bottom: 0;
+  }
+  & ol {
+    list-style-type: square;
+    margin: 0;
+    margin-left: 1.5vw;
+    margin-bottom: 1vw;
+    padding: 0;
+  }
 }
 
 .post-block {
@@ -47,6 +67,11 @@
   margin-bottom: 1em;
   height: 7em;
   width: 93%;
+  &  ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 pre {

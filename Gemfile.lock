@@ -151,6 +151,7 @@ DEPENDENCIES
   rake (~> 12.0)
   redcarpet (~> 3.4)
   sass (~> 3.4)
+  tzinfo
 
 RUBY VERSION
    ruby 2.4.0p0
